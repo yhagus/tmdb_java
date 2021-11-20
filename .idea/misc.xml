@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/drawable/amikom.xml" value="0.1265625" />
+        <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/drawable/rating.xml" value="0.1265625" />
+        <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout-v23/card.xml" value="0.11041666666666666" />
+        <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout/activity_about_me.xml" value="0.25" />
+        <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout/activity_detail.xml" value="0.33" />
         <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout/card.xml" value="0.25" />
+        <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout/settings_activity.xml" value="0.11041666666666666" />
+        <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/menu/menu.xml" value="0.225" />
+        <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/xml/root_preferences.xml" value="0.11041666666666666" />
       </map>
     </option>
   </component>

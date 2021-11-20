@@ -1,12 +1,16 @@
 package net.ariflaksito.tmdbapp_new;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
-import android.widget.Adapter;
-import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -76,6 +80,23 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.aboutItem:
+                Intent i = new Intent(MainActivity.this, AboutMeActivity.class);
+                startActivity(i);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     void setData(String jsonString){
         try {
             JSONArray jsonArray = new JSONArray(jsonString);
@@ -83,9 +104,11 @@ public class MainActivity extends AppCompatActivity {
             for(int i=0; i<jsonArray.length(); i++){
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
                 MovieModels player = new MovieModels(jsonObject.getString("title"),
-                        jsonObject.getString("release_date"),
                         jsonObject.getString("overview"),
-                        jsonObject.getString("poster_path")
+                        jsonObject.getString("release_date"),
+                        jsonObject.getString("poster_path"),
+                        jsonObject.getInt("vote_average"),
+                        jsonObject.getString("backdrop_path")
                 );
 
                 moviesArrayList.add(player);

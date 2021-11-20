@@ -5,12 +5,16 @@ public class MovieModels {
     private String overview;
     private String release_date;
     private String poster_path;
+    private int vote_average;
+    private String backdrop_path;
 
-    public MovieModels(String title, String overview, String release_date, String poster_path) {
+    public MovieModels(String title, String overview, String release_date, String poster_path, int vote_average, String backdrop_path) {
         this.title = title;
         this.overview = overview;
         this.release_date = release_date;
         this.poster_path = "https://image.tmdb.org/t/p/w500" + poster_path;
+        this.vote_average = vote_average;
+        this.backdrop_path = "https://image.tmdb.org/t/p/w500" + backdrop_path;
     }
 
     public String getTitle() {
@@ -43,5 +47,21 @@ public class MovieModels {
 
     public void setPoster_path(String poster_path){
         this.poster_path = poster_path;
+    }
+
+    public int getVote_average(){
+        return vote_average;
+    }
+
+    public void setVote_average(int vote_average){
+        this.vote_average = vote_average;
+    }
+
+    public String  getBackdrop_path(){
+        return backdrop_path;
+    }
+
+    public void setBackdrop_path(String backdrop_path){
+        this.backdrop_path = backdrop_path;
     }
 }
