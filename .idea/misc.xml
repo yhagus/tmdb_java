@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.15104166666666666" />
         <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/drawable/amikom.xml" value="0.1265625" />
+        <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/drawable/ic_launcher_background.xml" value="0.15104166666666666" />
         <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/drawable/rating.xml" value="0.1265625" />
         <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout-v23/card.xml" value="0.11041666666666666" />
         <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout/activity_about_me.xml" value="0.25" />

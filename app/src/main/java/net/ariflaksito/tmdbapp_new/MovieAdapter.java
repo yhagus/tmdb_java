@@ -31,12 +31,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
     }
 
     public void onBindViewHolder(@NonNull MovieAdapter.MovieViewHolder movieViewHolder, int i){
-//        movieViewHolder.bind(dataList.get(i));
         movieViewHolder.tvTitle.setText(dataList.get(i).getTitle());
-//        movieViewHolder.tvReleaseDate.setText(dataList.get(i).getRelease_date());
-//        movieViewHolder.tvOverview.setText(dataList.get(i).getOverview());
+
         Picasso.get().load(dataList.get(i).getPoster_path()).into(movieViewHolder.ivPoster);
-//        movieViewHolder.bind(dataList.get(i));
+
         movieViewHolder.ivPoster.setOnClickListener(view -> {
             Intent intent = new Intent(movieViewHolder.ivPoster.getContext(), DetailActivity.class);
             intent.putExtra("title", dataList.get(i).getTitle());
@@ -56,29 +54,13 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
     }
 
     public class MovieViewHolder extends RecyclerView.ViewHolder{
-        private TextView tvTitle, tvReleaseDate, tvOverview;
+        private TextView tvTitle;
         private ImageView ivPoster;
 
         public  MovieViewHolder(@NonNull View itemView){
             super(itemView);
             tvTitle = (TextView) itemView.findViewById(R.id.tvTitle);
-//            tvReleaseDate = (TextView) itemView.findViewById(R.id.tvReleaseDate);
-//            tvOverview = (TextView) itemView.findViewById(R.id.tvOverview);
             ivPoster = (ImageView) itemView.findViewById(R.id.ivPoster);
         }
-//        public void bind(MovieModels movieModels){
-//            itemView.setOnClickListener(view -> {
-//                Intent intent = new Intent(itemView.getContext(), DetailActivity.class);
-//                intent.putExtra(DetailActivity.EXTRA_MOVIE, (Parcelable) movieModels);
-//                itemView.getContext().startActivity(intent);
-//            });
-//        }
-//        public void bind(MovieModels movieModels){
-//            itemView.setOnClickListener(s -> {
-//                Intent intent = new Intent(itemView.getContext(), DetailActivity.class);
-//                intent.putExtra(DetailActivity.EXTRA_MOVIE, movieModels);
-//                itemView.getContext().startActivity(intent);
-//            });
-//        }
     }
 }
