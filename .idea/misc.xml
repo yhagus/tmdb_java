@@ -10,11 +10,16 @@
         <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout-v23/card.xml" value="0.11041666666666666" />
         <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout/activity_about_me.xml" value="0.25" />
         <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout/activity_detail.xml" value="0.33" />
+        <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout/activity_favorites.xml" value="0.225" />
         <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout/card.xml" value="0.25" />
+        <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout/row.xml" value="0.225" />
         <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout/settings_activity.xml" value="0.11041666666666666" />
+        <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/layout/simple_list.xml" value="0.225" />
         <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/menu/menu.xml" value="0.225" />
         <entry key="..\:/Users/bagusp/AndroidStudioProjects/tmdbApp_new/app/src/main/res/xml/root_preferences.xml" value="0.11041666666666666" />
+        <entry key="..\:/Users/bagusp/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/activity_list_item.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/bagusp/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_list_item_2.xml" value="0.16" />
       </map>
     </option>
   </component>

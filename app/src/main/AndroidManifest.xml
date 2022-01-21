@@ -14,13 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TmdbApp_new">
         <activity
+            android:name=".FavoritesActivity"
+            android:exported="true" />
+        <activity
             android:name=".AboutMeActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".DetailActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -31,12 +32,13 @@ public class MainActivity extends AppCompatActivity {
     private MovieAdapter adapter;
     private ArrayList<MovieModels> moviesArrayList;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String url = "https://api.themoviedb.org/3/trending/all/week?api_key=a4ca44c52c5dd4822128c31e02d41910";
+        String url = "https://api.themoviedb.org/3/movie/popular?api_key=a4ca44c52c5dd4822128c31e02d41910";
 
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder().url(url).build();
@@ -67,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                             recyclerView = (RecyclerView) MainActivity.this.findViewById(R.id.recycler_view);
                             adapter = new MovieAdapter(moviesArrayList);
 
-                            RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
+                            RecyclerView.LayoutManager layoutManager = new GridLayoutManager(MainActivity.this, 2);
                             recyclerView.setLayoutManager(layoutManager);
                             recyclerView.setAdapter(adapter);
                         }
@@ -93,6 +95,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.aboutItem:
                 Intent i = new Intent(MainActivity.this, AboutMeActivity.class);
                 startActivity(i);
+                break;
+            case R.id.favorites:
+                Intent f = new Intent(MainActivity.this, FavoritesActivity.class);
+                startActivity(f);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

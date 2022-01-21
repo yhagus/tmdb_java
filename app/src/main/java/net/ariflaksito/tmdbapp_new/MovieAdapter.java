@@ -32,7 +32,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
 
     public void onBindViewHolder(@NonNull MovieAdapter.MovieViewHolder movieViewHolder, int i){
         movieViewHolder.tvTitle.setText(dataList.get(i).getTitle());
-
         Picasso.get().load(dataList.get(i).getPoster_path()).into(movieViewHolder.ivPoster);
 
         movieViewHolder.ivPoster.setOnClickListener(view -> {
