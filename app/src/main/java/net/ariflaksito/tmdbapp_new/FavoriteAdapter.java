@@ -16,9 +16,9 @@ import java.util.ArrayList;
 
 public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.HolderItem> {
 
-    private ArrayList<Movie> dataList;
+    private ArrayList<Favorite> dataList;
 
-    public FavoriteAdapter(ArrayList<Movie> dataList) {
+    public FavoriteAdapter(ArrayList<Favorite> dataList) {
         this.dataList = dataList;
     }
 

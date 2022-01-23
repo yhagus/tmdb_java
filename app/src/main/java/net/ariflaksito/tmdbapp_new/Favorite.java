@@ -1,13 +1,13 @@
 package net.ariflaksito.tmdbapp_new;
 
-public class Movie {
+public class Favorite {
     int id;
     String title,overview,release_date,poster_path,backdrop_path;
     int vote_average;
 
-    public Movie(){};
+    public Favorite(){};
 
-    public Movie(int id, String title, String overview, String release_date, String poster_path, int vote_average, String backdrop_path){
+    public Favorite(int id, String title, String overview, String release_date, String poster_path, int vote_average, String backdrop_path){
         this.id = id;
         this.title = title;
         this.overview = overview;

@@ -101,7 +101,16 @@
         android:id="@+id/addToFavorites"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="visible"
         android:layout_margin="@dimen/margin_xl"
         android:text="@string/add_to_favorites" />
+
+    <Button
+        android:id="@+id/removeFromFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="@dimen/margin_xl"
+        android:text="@string/remove_from_favorites" />
 
 </LinearLayout>
