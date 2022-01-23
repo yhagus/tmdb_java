@@ -1,22 +1,20 @@
 package net.ariflaksito.tmdbapp_new;
 
-public class MovieModels {
-    private int id;
-    private String title;
-    private String overview;
-    private String release_date;
-    private String poster_path;
-    private int vote_average;
-    private String backdrop_path;
+public class Movie {
+    int id;
+    String title,overview,release_date,poster_path,backdrop_path;
+    int vote_average;
 
-    public MovieModels(int id, String title, String overview, String release_date, String poster_path, int vote_average, String backdrop_path) {
+    public Movie(){};
+
+    public Movie(int id, String title, String overview, String release_date, String poster_path, int vote_average, String backdrop_path){
         this.id = id;
         this.title = title;
         this.overview = overview;
         this.release_date = release_date;
         this.poster_path = "https://image.tmdb.org/t/p/w500" + poster_path;
         this.vote_average = vote_average;
-        this.backdrop_path = "https://image.tmdb.org/t/p/w500" + backdrop_path;
+        this.backdrop_path = backdrop_path;
     }
 
     public int getId() {
@@ -51,27 +49,27 @@ public class MovieModels {
         this.release_date = release_date;
     }
 
-    public String getPoster_path(){
+    public String getPoster_path() {
         return poster_path;
     }
 
-    public void setPoster_path(String poster_path){
+    public void setPoster_path(String poster_path) {
         this.poster_path = poster_path;
     }
 
-    public int getVote_average(){
+    public int getVote_average() {
         return vote_average;
     }
 
-    public void setVote_average(int vote_average){
+    public void setVote_average(int vote_average) {
         this.vote_average = vote_average;
     }
 
-    public String  getBackdrop_path(){
+    public String getBackdrop_path() {
         return backdrop_path;
     }
 
-    public void setBackdrop_path(String backdrop_path){
+    public void setBackdrop_path(String backdrop_path) {
         this.backdrop_path = backdrop_path;
     }
 }

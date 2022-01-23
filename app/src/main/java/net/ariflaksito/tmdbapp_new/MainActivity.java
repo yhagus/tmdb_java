@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         String url = "https://api.themoviedb.org/3/movie/popular?api_key=a4ca44c52c5dd4822128c31e02d41910";
+//        String url = "http://192.168.100.28/api-dbmovie/show.php";
 
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder().url(url).build();
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                             recyclerView = (RecyclerView) MainActivity.this.findViewById(R.id.recycler_view);
                             adapter = new MovieAdapter(moviesArrayList);
 
-                            RecyclerView.LayoutManager layoutManager = new GridLayoutManager(MainActivity.this, 2);
+                            RecyclerView.LayoutManager layoutManager = new GridLayoutManager(MainActivity.this, 3);
                             recyclerView.setLayoutManager(layoutManager);
                             recyclerView.setAdapter(adapter);
                         }
@@ -110,7 +111,9 @@ public class MainActivity extends AppCompatActivity {
             moviesArrayList = new ArrayList<>();
             for(int i=0; i<jsonArray.length(); i++){
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
-                MovieModels player = new MovieModels(jsonObject.getString("title"),
+                MovieModels player = new MovieModels(
+                        jsonObject.getInt("id"),
+                        jsonObject.getString("title"),
                         jsonObject.getString("overview"),
                         jsonObject.getString("release_date"),
                         jsonObject.getString("poster_path"),

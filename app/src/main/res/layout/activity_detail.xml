@@ -94,6 +94,14 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             tools:text="Overview..." />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/addToFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_xl"
+        android:text="@string/add_to_favorites" />
 
 </LinearLayout>
