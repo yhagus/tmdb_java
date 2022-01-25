@@ -1,4 +1,4 @@
-package net.ariflaksito.tmdbapp_new;
+package net.ariflaksito.tmdbapp_new.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +10,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import net.ariflaksito.tmdbapp_new.models.MovieModels;
+import net.ariflaksito.tmdbapp_new.R;
+import net.ariflaksito.tmdbapp_new.adapters.MovieAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONException;

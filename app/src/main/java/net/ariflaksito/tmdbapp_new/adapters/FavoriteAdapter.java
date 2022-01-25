@@ -1,4 +1,4 @@
-package net.ariflaksito.tmdbapp_new;
+package net.ariflaksito.tmdbapp_new.adapters;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,6 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
+import net.ariflaksito.tmdbapp_new.activities.DetailActivity;
+import net.ariflaksito.tmdbapp_new.R;
 import net.ariflaksito.tmdbapp_new.db.DbHelper;
 import net.ariflaksito.tmdbapp_new.models.Movie;
 

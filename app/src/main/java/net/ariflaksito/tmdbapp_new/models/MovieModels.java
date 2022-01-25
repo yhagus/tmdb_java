@@ -1,4 +1,4 @@
-package net.ariflaksito.tmdbapp_new;
+package net.ariflaksito.tmdbapp_new.models;
 
 public class MovieModels {
     private int id;

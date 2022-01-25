@@ -1,4 +1,4 @@
-package net.ariflaksito.tmdbapp_new;
+package net.ariflaksito.tmdbapp_new.adapters;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -11,6 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
+
+import net.ariflaksito.tmdbapp_new.activities.DetailActivity;
+import net.ariflaksito.tmdbapp_new.models.MovieModels;
+import net.ariflaksito.tmdbapp_new.R;
 
 import java.util.ArrayList;
 

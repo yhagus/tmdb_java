@@ -1,4 +1,4 @@
-package net.ariflaksito.tmdbapp_new;
+package net.ariflaksito.tmdbapp_new.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import net.ariflaksito.tmdbapp_new.R;
+import net.ariflaksito.tmdbapp_new.adapters.FavoriteAdapter;
 import net.ariflaksito.tmdbapp_new.db.DbHelper;
 import net.ariflaksito.tmdbapp_new.models.Movie;
 

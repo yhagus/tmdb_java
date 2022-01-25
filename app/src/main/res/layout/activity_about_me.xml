@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/dark_grey"
-    tools:context=".AboutMeActivity">
+    tools:context=".activities.AboutMeActivity">
 
     <ImageView
         android:id="@+id/amikom_icon"

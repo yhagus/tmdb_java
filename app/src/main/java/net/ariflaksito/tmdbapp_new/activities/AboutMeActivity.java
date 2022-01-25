@@ -1,8 +1,10 @@
-package net.ariflaksito.tmdbapp_new;
+package net.ariflaksito.tmdbapp_new.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import net.ariflaksito.tmdbapp_new.R;
 
 public class AboutMeActivity extends AppCompatActivity {
 
