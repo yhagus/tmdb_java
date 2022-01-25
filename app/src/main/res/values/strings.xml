@@ -18,6 +18,8 @@
     <string name="confirm_delete">Do you want to delete this?</string>
     <string name="confirm_yes">Yes</string>
     <string name="confirm_no">No</string>
+
+
     <string name="popular">Popular</string>
 
     <string name="favorite_plural">Favorites</string>
@@ -25,5 +27,18 @@
 
     <string name="add_to_favorites">Add to favorites</string>
     <string name="remove_from_favorites">Remove from favorites</string>
+
+    <string name="added_to_favorites">Added to favorites!</string>
+    <string name="removed_from_favorites">Removed from favorites!</string>
+    <string name="add_err">Failed to add</string>
+    <string name="remove_err">Failed to remove</string>
+
+    <string name="id_err">ID can\'t be empty!</string>
+    <string name="title_err">Title can\'t be empty!</string>
+    <string name="overview_err">Overview can\'t be empty!</string>
+    <string name="rdate_err">Release date can\'t be empty!</string>
+    <string name="poster_err">Poster path can\'t be empty!</string>
+    <string name="vote_err">Vote average can\'t be empty!</string>
+    <string name="backdrop_err">Backdrop path can\'t be empty!</string>
 
 </resources>

@@ -15,4 +15,17 @@
     <string name="loading_post">Memposting data...</string>
     <string name="favorite_plural">Favorit</string>
     <string name="favorite_singular">Favorit</string>
+    <string name="add_to_favorites">Tambahkan ke favorit</string>
+    <string name="remove_from_favorites">Hapus dari favorit</string>
+    <string name="added_to_favorites">Berhasil menambahkan ke favorit!</string>
+    <string name="removed_from_favorites">Berhasil dihapus dari favorit</string>
+    <string name="add_err">Gagal menambahkan</string>
+    <string name="remove_err">Gagal menghapus</string>
+    <string name="id_err">ID tidak bisa kosong!</string>
+    <string name="title_err">Judul tidak bisa kosong!</string>
+    <string name="overview_err">Deskripsi tidak bisa kosong!</string>
+    <string name="rdate_err">Tanggal rilis tidak bisa kosong!</string>
+    <string name="poster_err">Poster tidak bisa kosong!</string>
+    <string name="vote_err">Rating tidak bisa kosong!</string>
+    <string name="backdrop_err">Background tidak bisa kosong!</string>
 </resources>

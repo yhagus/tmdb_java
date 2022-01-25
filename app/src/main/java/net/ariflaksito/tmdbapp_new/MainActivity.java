@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                             recyclerView = (RecyclerView) MainActivity.this.findViewById(R.id.recycler_view);
                             adapter = new MovieAdapter(moviesArrayList);
 
-                            RecyclerView.LayoutManager layoutManager = new GridLayoutManager(MainActivity.this, 3);
+                            RecyclerView.LayoutManager layoutManager = new GridLayoutManager(MainActivity.this, 4);
                             recyclerView.setLayoutManager(layoutManager);
                             recyclerView.setAdapter(adapter);
                         }
